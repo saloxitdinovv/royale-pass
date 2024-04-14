@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header></header>
 
@@ -15,10 +17,64 @@
     </div>
 
     <div class="body">
-        
+        <div class="container">
+            <div class="main_body">
+                <div class="filtration">
+
+                    <div class="filtrs_boxes">
+
+                        <h1>Поиск машины</h1>
+
+                        <div class="search_box">
+                            <div class="img">
+                                <img src="/public/search.svg" alt="">
+                            </div>
+                            <input type="text" placeholder="Поиск">
+                        </div>
+
+                        <div class="filters">
+                            <h1>Фильтры</h1>
+
+                            <div class="marks">
+                                <h3>Марка</h3>
+
+                                <select name="marks" class="mark_filter" id="marks">
+                                    <option value="1">Любая</option>
+                                </select>
+                            </div>
+
+                            <div class="years">
+                                <h3>Год выпуска</h3>
+                                <select name="year" id="year" class="year">
+                                    <option value="1">от 2000</option>
+                                </select>
+                            </div>
+
+                            <div class="milage_box">
+                                <h3>Пробег</h3>
+                                <select name="milage" id="milage" class="milage">
+                                    <option value="1">10000</option>
+                                </select>
+                            </div>
+
+                            <div class="filter_btns">
+                                <button class="find">Применить</button>
+                                <button class="clear">Сброс</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                </div>
+                <div class="cars">
+
+                </div>
+            </div>
+        </div>
     </div>
 
     <script type="module" src="script.js"></script>
     <script type="module" src="/modules/header.js"></script>
 </body>
+
 </html>

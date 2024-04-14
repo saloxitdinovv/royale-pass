@@ -159,3 +159,278 @@ header {
         color: #838383;
     }
 }
+
+
+.main_body {
+    display: flex;
+    gap: 30px;
+    padding-top: 30px;
+
+
+    .filtration {
+        width: 320px;
+        height: fit-content;
+        position: sticky;
+        top: 20px;
+
+        h1 {
+            font-family: Gilroy;
+            font-size: 36px;
+            font-weight: 600;
+            letter-spacing: -0.011em;
+            text-align: left;
+            color: #474744;
+            line-height: 50px;
+            padding-bottom: 10px;
+        }
+
+        .search_box {
+            display: flex;
+            align-items: center;
+            padding: 0px 15px;
+            border: 1px solid #A1A1A1;
+            border-radius: 42px;
+            gap: 10px;
+
+            .img {
+                img {
+                    padding-top: 3px;
+                }
+            }
+
+            input {
+                border: none;
+                height: 40px;
+                width: 100%;
+                outline: navajowhite;
+            }
+        }
+
+        .filters {
+            padding-top: 20px;
+
+            h1 {
+                font-family: Gilroy;
+                font-size: 36px;
+                font-weight: 600;
+                line-height: 68.4px;
+                letter-spacing: -0.011em;
+                text-align: left;
+            }
+
+            .marks {
+                h3 {
+                    font-family: Gilroy;
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 24px;
+                    letter-spacing: -0.011em;
+                    text-align: left;
+                    color: #474744;
+                    padding-bottom: 6px;
+                }
+
+                select {
+                    width: 100%;
+                    height: 30px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 21px;
+                    letter-spacing: -0.011em;
+                    text-align: left;
+                    border: 1px solid #A1A1A1;
+                    border-radius: 8px;
+                    opacity: 0.7;
+                }
+            }
+
+            .years {
+                padding-top: 15px;
+
+                h3 {
+                    font-family: Gilroy;
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 24px;
+                    letter-spacing: -0.011em;
+                    text-align: left;
+                    color: #474744;
+                    padding-bottom: 6px;
+                }
+
+                select {
+                    width: 100%;
+                    height: 30px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 21px;
+                    letter-spacing: -0.011em;
+                    text-align: left;
+                    border: 1px solid #A1A1A1;
+                    border-radius: 8px;
+                    opacity: 0.7;
+                }
+            }
+
+            .milage_box {
+                padding-top: 15px;
+
+                h3 {
+                    font-family: Gilroy;
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 24px;
+                    letter-spacing: -0.011em;
+                    text-align: left;
+                    color: #474744;
+                    padding-bottom: 6px;
+                }
+
+                select {
+                    width: 100%;
+                    height: 30px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 21px;
+                    letter-spacing: -0.011em;
+                    text-align: left;
+                    border: 1px solid #A1A1A1;
+                    border-radius: 8px;
+                    opacity: 0.7;
+                }
+            }
+
+            .filter_btns {
+                display: flex;
+                align-items: center;
+                padding-top: 20px;
+                gap: 10px;
+
+                .find {
+                    padding: 14px 30px;
+                    color: white;
+                    background-color: #474747;
+                    border: none;
+                    border-radius: 55px;
+                    cursor: pointer;
+                }
+
+                .clear {
+                    background: none;
+                    border: none;
+                    width: 130px;
+                    height: 40px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .cars {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 30px;
+        column-gap: 30px;
+    }
+}
+
+
+.card {
+    padding: 40px 22px;
+    border: 1px solid #A1A1A1;
+    border-radius: 22px;
+    padding-top: 80px;
+    height: 400px;
+
+    .card_image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            height: 90px;
+            object-fit: cover;
+            width: 230px;
+        }
+    }
+
+    .speedometer {
+        display: flex;
+        align-items: center;
+        padding-top: 5px;
+        gap: 5px;
+
+        p {
+            color: #474747;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20.9px;
+            letter-spacing: -0.011em;
+            text-align: left;
+            padding-top: 2px;
+        }
+    }
+
+    .carName_info {
+        padding-top: 10px;
+
+        h1 {
+            color: #474747;
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: -0.011em;
+            text-align: left;
+        }
+
+        h3 {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 25px;
+            letter-spacing: -0.011em;
+            text-align: left;
+        }
+    }
+
+    .car_price {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: -0.011em;
+        text-align: left;
+        color: #474747;
+        padding-top: 15px;
+    }
+
+    .card_buttons {
+        padding-top: 30px;
+        display: flex;
+        gap: 10px;
+
+        .rent {
+            padding: 10px 20px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+            letter-spacing: -0.011em;
+            text-align: center;
+            background-color: #474747;
+            color: white;
+            cursor: pointer;
+            border: none;
+            border-radius: 80px;
+        }
+
+        .more {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+            letter-spacing: -0.011em;
+            text-align: center;
+            color: #474747;
+            padding: 10px 10px;
+            cursor: pointer;
+            border: none;
+            background: none;
+        }
+    }
+}

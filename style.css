@@ -830,6 +830,7 @@ header {
 
 .information_shag {
   margin-top: 70px;
+
   .main_cont {
     border: 1px solid #A1A1A1;
     width: 1200px;
@@ -877,4 +878,189 @@ header {
   .container {
     padding: 60px 50px;
   }
+}
+
+
+.soc_seti button {
+  margin-left: 30px;
+  border: 1px solid rgb(0, 78, 0);
+  width: 120px;
+  border-radius: 8px;
+  height: 50px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.download_apps {
+  display: flex;
+}
+
+.text_download {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    padding-left: 30px;
+    font-family: sans-serif;
+    font-size: 30px;
+    color: white;
+  }
+}
+
+.images_download {
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 200px;
+    height: 60px;
+  }
+}
+
+
+.download_apps {
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #474747;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.btn_footer {
+
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+
+  button {
+    font-size: 20px;
+    width: 420px;
+    height: 60px;
+    border-radius: 30px;
+    border: 2px solid black;
+    background-color: white;
+  }
+}
+
+
+
+.text_footer_h5 {
+  padding-top: 30px;
+  padding-left: 20px;
+  font-size: 20px;
+  color: #474747;
+  padding-bottom: 80px;
+}
+
+.obsh {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.right_footer {
+
+  .zayava {
+    padding-top: 20px;
+    padding-right: 150px;
+    padding-bottom: 40px;
+  }
+}
+
+.form_footer {
+  h5 {
+    color: #979797;
+  }
+
+  input {
+    color: white;
+    padding-left: 10px;
+    width: 500px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    background-color: rgb(211, 211, 211);
+  }
+}
+
+.pochta {
+  padding-top: 30px;
+
+  h5 {
+    color: #979797;
+
+  }
+
+  input {
+    color: white;
+    background-color: rgb(211, 211, 211);
+    padding-left: 10px;
+  }
+}
+
+.btn_and_text {
+  padding-top: 20px;
+}
+
+.btn_and {
+  display: flex;
+  font-family: sans-serif;
+  gap: 20px;
+
+  button {
+    font-size: 18px;
+    border-radius: 20px;
+    width: 200px;
+    height: 40px;
+    color: white;
+    border: none;
+    background-color: #474747;
+  }
+
+  h5 {
+    width: 300px;
+    height: 40px;
+  }
+
+}
+
+.glav_nizhniy_menu {
+  padding-top: 20px;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+
+  h3 {
+    font-size: 35px;
+  }
+}
+
+.menu__footer,
+.soc_setii,
+.contakts {
+  color: #474747;
+  padding-bottom: 10px;
+
+  h4 {
+    padding-top: 5px;
+  }
+}
+
+.contakts {
+  margin-top: -20px;
+}
+
+footer {
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
