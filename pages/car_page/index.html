@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header></header>
+
+    <div class="direction">
+        <div class="container">
+            <div class="way">
+                Главная > Автомобиль в лизинг > <span class="type">Легковые автомобили</span> > <span
+                    class="car_name">Chevrolet Aveo</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 class="car_name"></h1>
+    </div>
+
+    <div class="main_info">
+        <div class="container">
+            <div class="car_info">
+                <div class="swiper_box">
+                    <div class="slider">
+                        <div class="slides-container"></div>
+                        <div class="btns_slider">
+                            <button class="prev">
+                                <img src="/public/prev.svg" alt="">
+                            </button>
+                            <button class="next">
+                                <img src="/public/next.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="car_info_box">
+                    <h1 class="car_name"></h1>
+                    <p class="type"></p>
+
+                    <hr>
+
+                    <div class="speed_info">
+                        <img src="/public/speedometer.svg" alt="11">
+                        <p class="speedd"><span class="car_speed"></span>км/ч</p>
+                    </div>
+
+                    <p class="car_description"></p>
+
+                    <p class="liz">Лизинг:</p>
+                    <p class="price_credit"></p>
+
+                    <button class="offer">Оставить заявку</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="some_cars">
+        <div class="container">
+            <div class="similar">
+                <div class="head">
+                    <h1>Уникальное предложение</h1>
+                    <button class="go_catalog"></button>
+                </div>
+
+                <div class="similar_body">
+                    <div class="place"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+    <script type="module" src="/modules/http.js"></script>
+    <script type="module" src="/modules/header.js"></script>
+</body>
+
+</html>

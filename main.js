@@ -1,24 +1,43 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+import { getData } from "./modules/http";
+import { reload } from "./modules/reloads";
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+let place = document.querySelector('.orders_box_b')
 
-setupCounter(document.querySelector('#counter'))
+getData('/cars')
+  .then(res => {
+    let arr = res
+    reload(arr.slice(0, 3), place)
+  })
+
+
+const allCatBtn = document.getElementById('all_cat');
+const xetchbekBtn = document.getElementById('xetchbek');
+const krossowersBtn = document.getElementById('krossowers');
+const sedansBtn = document.getElementById('sedans');
+
+allCatBtn.addEventListener('click', function () {
+  changeButtonStyle(allCatBtn);
+});
+
+xetchbekBtn.addEventListener('click', function () {
+  changeButtonStyle(xetchbekBtn);
+});
+
+krossowersBtn.addEventListener('click', function () {
+  changeButtonStyle(krossowersBtn);
+});
+
+sedansBtn.addEventListener('click', function () {
+  changeButtonStyle(sedansBtn);
+});
+
+function changeButtonStyle(clickedButton) {
+  const buttons = document.querySelectorAll('.left_header_btns button');
+  buttons.forEach(button => {
+    button.style.backgroundColor = 'white';
+    button.style.color = 'black';
+  });
+
+  clickedButton.style.backgroundColor = 'black';
+  clickedButton.style.color = 'white';
+}
